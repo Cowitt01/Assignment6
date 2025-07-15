@@ -3,7 +3,7 @@ Cory Witt
 script.js
 INFO 1579
 Shaw
-07/12/2025
+07/14/2025
 */
  
 "use strict";
@@ -72,34 +72,34 @@ $(document).ready(()=> {
                 break;
 
             case 'k2m':             // if kilometers to miles is chosen, call the function to convert to miles. Alert the user with the converted value
-                alert(valueHolder.val() + " kilometers is " + calculateMiles(valueToConvert) + " miles.");
+                alert(valueHolder.val() + " kilometers is " + calculateMiles(valueToConvert).toFixed(2) + " miles.");
                 reset();
                 break;
             case 'p2k':            // if pounds to kilograms is chosen, call the function to convert to kilograms. Alert the user with the converted value.
-                alert(valueHolder.val() + " pounds is " + calculateKilograms(valueToConvert) + " kilograms.");
+                alert(valueHolder.val() + " pounds is " + calculateKilograms(valueToConvert).toFixed(2) + " kilograms.");
                 reset();
                 break;
 
             case 'k2p':          // if kilograms to pounds is chosen, call the function to convert to pounds. Alert the user with the converted value.
-                alert(valueHolder.val() + " kilograms is " + calculatePounds(valueToConvert) + " pounds.");
+                alert(valueHolder.val() + " kilograms is " + calculatePounds(valueToConvert).toFixed(2) + " pounds.");
                 reset();
                 break;
 
             case 'f2m':       // if feet to meters is chosen, call the function to convert to meters. Alert the user with the converted value.
-                alert(valueHolder.val() + " feet is " + calculateMeters(valueToConvert) + " meters.");
+                alert(valueHolder.val() + " feet is " + calculateMeters(valueToConvert).toFixed(2) + " meters.");
                 reset();
                 break;
 
             case 'm2f':     // if meters to feet is chosen, call the function to convert to feet. Alert the user with the converted value.
-                alert(valueHolder.val() + " meters is " + calculateFeet(valueToConvert) + " feet.");
+                alert(valueHolder.val() + " meters is " + calculateFeet(valueToConvert).toFixed(2) + " feet.");
                 reset();
                 break;
 
             case 'f2c':       // if farenheit to celcius is chosen, call the function to convert to celcius. Alert the user with the converted value.
-                alert(valueHolder.val() + " degrees fahrenheit is " + calculateCelsius(valueToConvert)  + " degrees celsius.");
+                alert(valueHolder.val() + " degrees fahrenheit is " + calculateCelsius(valueToConvert).toFixed(2)  + " degrees celsius.");
                 break;
             case 'c2f':    // if celcius to farenheit is chosen, call the function to convert to farenheit. Alert the user with the converted value.
-                alert(valueHolder.val() + " degrees celsius is " + calculateFahrenheit(valueToConvert)  + " degrees fahrenheit.");
+                alert(valueHolder.val() + " degrees celsius is " + calculateFahrenheit(valueToConvert).toFixed(2)  + " degrees fahrenheit.");
                 reset();
                 break;
     }
